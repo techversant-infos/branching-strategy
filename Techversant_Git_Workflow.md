@@ -23,7 +23,6 @@ A unified Git workflow for all engineering teams — Backend, Frontend, Mobile, 
 | Documentation | feature/doc-<JIRA-ID>-<desc> | feature/doc-PLAT-17-api-guide |
 | Refactor | feature/refactor-<JIRA-ID>-<desc> | feature/refactor-SPARK-221-service |
 | Hotfix | feature/hotfix-<JIRA-ID>-<desc> | feature/hotfix-OPS-999-null-pointer |
-| (Optional) Release Branch | release/<version> | release/v2.5.0 |
 
 **Tips:** Always branch off main, keep branches small, and include JIRA ID.
 
@@ -66,12 +65,6 @@ This ensures that main always contains only tested, deployable code.
 | Dev | Merge to dev | Unit + Integration + Smoke tests |
 | Staging | Manual promotion from dev | QA & UAT sign-off |
 | Prod | Merge verified commit to main + Tag (vX.Y.Z) | Approval + Smoke tests |
-
-### (Optional) Release Branch Usage
-- For larger coordinated releases, create a temporary branch: `release/vX.Y.Z`.
-- Stabilize QA/UAT changes on the release branch.
-- Tag production release from it, then merge back to main.
-- Delete the branch post-deployment.
 
 ## 🔁 Rollback & Database Script Management
 - Tag every release; tags are immutable.
