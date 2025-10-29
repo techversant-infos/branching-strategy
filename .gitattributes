@@ -1,0 +1,39 @@
+###############################################################################
+# 📘 Techversant Default .gitattributes
+###############################################################################
+
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.mp4 binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+
+.env merge=ours
+*.lock merge=ours
+
+*.php diff=php
+*.js diff=javascript
+*.py diff=python
+*.go diff=golang
+*.html diff=html
+*.css diff=css
+*.json diff=json
+*.md diff=markdown
+
+vendor/* linguist-vendored
+node_modules/* linguist-vendored
+build/* linguist-generated
+dist/* linguist-generated
+
+.gitattributes export-ignore
+.gitignore export-ignore
+.editorconfig export-ignore
+README.md export-ignore
