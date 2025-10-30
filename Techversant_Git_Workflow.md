@@ -38,6 +38,8 @@ A unified Git workflow for all engineering teams — Backend, Frontend, Mobile, 
 ✅ Keep branches small and focused (< 500 LOC).  
 ✅ Include JIRA ID in branch names.  
 ✅ Avoid long-running branches; merge early and often.  
+✅ Keeps commits atomic.
+✅ Regular pulls before push.
 
 ---
 
@@ -157,6 +159,8 @@ git push origin feature/add-ICF-102-login
 ✅ Keep `.env` & `.nocommit` updated  
 ✅ Maintain consistent `.editorconfig`  
 ✅ Regularly **sync long-lived branches** with `main`  
+✅ Validate .gitattributes consistency (line endings, LF/CRLF settings).
+✅ Periodically verify tag naming conventions (semantic versioning compliance).
 
 ---
 
